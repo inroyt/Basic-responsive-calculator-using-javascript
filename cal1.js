@@ -22,7 +22,7 @@ keys.addEventListener("click", e => {
     for(let i in numr){  
      if(numr[i]=="."){y++;}                                           
      if(y>1){numr.pop();y=0;}                                             //to prevent "." from occuring more than once
-     if((numr[0]=="/")||(numr[0]=="x")||(numr[0]=="=")){numr.pop();}
+     if((numr[0]=="/")||(numr[0]=="x")||(numr[0]=="=")||(numr[0]=="%")){numr.pop();}
      if(isNaN(numr[i])){ flag=1;
         if(numr[i]=="C"){                                             //for clearing all inputs and result
             document.getElementById("screen").innerHTML="0";
